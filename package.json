@@ -3,8 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": true,
   "scripts": {
+    "postinstall": "husky install",
     "test": "jest"
+  },
+  "standard": {
+    "env": ["jest"]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "author": "",
   "license": "ISC",
