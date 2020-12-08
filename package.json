@@ -8,7 +8,8 @@
     "postinstall": "husky install",
     "pre-commit": "lint-staged",
     "test": "jest --watch --silent --colors --noStackTrace",
-    "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace"
+    "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace",
+    "test:ci": "jest --coverage"
   },
   "lint-staged": {
     "*.js": [
