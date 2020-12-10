@@ -191,5 +191,7 @@ module.exports = {
 
   // Whether to use watchman for file crawling
   // watchman: true,
-  collectCoverageFrom: ['**/src/**/*.js']
+  collectCoverageFrom: ['**/src/**/*.js'],
+  preset: '@shelf/jest-mongodb',
+  watchPathIgnorePatterns: ['globalConfig']
 }
