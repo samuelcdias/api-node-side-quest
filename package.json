@@ -8,7 +8,7 @@
     "start": "node src/main/index.js",
     "postinstall": "husky install",
     "pre-commit": "lint-staged",
-    "test": "jest --silent --colors --noStackTrace --passWithNoTests",
+    "test": "jest --silent --colors --noStackTrace --passWithNoTests --runInBand",
     "test:unit": "npm test -- --watch -c jest-unit-config.js",
     "test:integration": "npm test -- --watch -c jest-integration-config.js",
     "test:staged": "npm test -- --findRelatedTests",
