@@ -23,6 +23,7 @@ describe('Login Routes', () => {
       email: 'valid_email@email.com',
       password: bcrypt.hashSync('hashed_password', 10)
     })
+    console.log(bcrypt.hashSync('hashed_password', 10))
     await request(app)
       .post('/api/login')
       .send({
